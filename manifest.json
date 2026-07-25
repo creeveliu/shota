@@ -8,6 +8,15 @@
     "default_title": "Shota: select an element",
     "default_popup": "popup.html"
   },
+  "commands": {
+    "start-picker": {
+      "suggested_key": {
+        "default": "Alt+Shift+S",
+        "mac": "Alt+Shift+S"
+      },
+      "description": "Start element capture"
+    }
+  },
   "background": {
     "service_worker": "background.js"
   },

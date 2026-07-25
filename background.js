@@ -9,6 +9,25 @@ const ensureOffscreen = async () => {
   }
 };
 
+const startPicker = async (tabId) => {
+  try {
+    await chrome.tabs.sendMessage(tabId, { type: 'START_PICKER' });
+  } catch {
+    try {
+      await chrome.scripting.executeScript({ target: { tabId }, files: ['content.js'] });
+      await chrome.tabs.sendMessage(tabId, { type: 'START_PICKER' });
+    } catch {
+      // Chrome blocks extensions on a small set of privileged pages.
+    }
+  }
+};
+
+chrome.commands.onCommand.addListener(async (command) => {
+  if (command !== 'start-picker') return;
+  const [tab] = await chrome.tabs.query({ active: true, lastFocusedWindow: true });
+  if (tab?.id) startPicker(tab.id);
+});
+
 chrome.runtime.onMessage.addListener((message, sender, sendResponse) => {
   if (message.type !== 'SHOT_ELEMENT' || !sender.tab?.id) return;
 
