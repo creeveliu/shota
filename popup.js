@@ -19,4 +19,10 @@ document.querySelector('#start').addEventListener('click', async () => {
   }
   window.close();
 });
+
+document.querySelector('#shortcut-settings').addEventListener('click', () => {
+  chrome.tabs.create({ url: 'chrome://extensions/shortcuts' });
+  window.close();
+});
+
 document.addEventListener('keydown', (event) => { if (event.key === 'Enter') document.querySelector('#start').click(); });

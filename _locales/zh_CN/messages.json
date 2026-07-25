@@ -9,6 +9,7 @@
   "startSelecting": { "message": "开始选择" },
   "proTip": { "message": "小提示" },
   "cancelHint": { "message": "随时按 Esc 取消。" },
+  "shortcutSettings": { "message": "设置快捷键" },
   "version": { "message": "v0.1 MVP" },
   "builtForWeb": { "message": "为网页而生" },
   "pickerHint": { "message": "移动到元素 · 点击截图 · 按 Esc 退出" },

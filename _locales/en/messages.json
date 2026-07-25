@@ -9,6 +9,7 @@
   "startSelecting": { "message": "Start selecting" },
   "proTip": { "message": "Pro tip" },
   "cancelHint": { "message": "Press Esc anytime to cancel." },
+  "shortcutSettings": { "message": "Set keyboard shortcut" },
   "version": { "message": "v0.1 MVP" },
   "builtForWeb": { "message": "Built for the web" },
   "pickerHint": { "message": "Move to an element · click to capture · Esc to exit" },
