@@ -1,6 +1,8 @@
 (() => {
   if (window.top !== window) return;
 
+  const t = (key, fallback) => chrome.i18n.getMessage(key) || fallback;
+
   let active = false;
   let hovered = null;
   let outline = null;
@@ -15,7 +17,7 @@
 
     hint = document.createElement('div');
     hint.id = '__shota_hint';
-    hint.textContent = 'Move to an element · click to capture · Esc to exit';
+    hint.textContent = t('pickerHint', 'Move to an element · click to capture · Esc to exit');
     hint.style.cssText = 'position:fixed;left:50%;top:18px;transform:translateX(-50%);z-index:2147483647;padding:9px 14px;border-radius:999px;background:#191817;color:#fff;font:600 12px/1.2 -apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;letter-spacing:.01em;box-shadow:0 8px 22px rgba(25,24,23,.22);pointer-events:none;';
     document.documentElement.appendChild(hint);
   };
@@ -71,18 +73,18 @@
       }).then((result) => {
         if (hint) {
           hint.style.display = 'block';
-          hint.textContent = result?.ok ? 'Copied to clipboard' : `Could not copy capture${result?.error ? `: ${result.error}` : ''}`;
+          hint.textContent = result?.ok ? t('copied', 'Copied to clipboard') : `${t('copyFailed', 'Could not copy capture')}${result?.error ? `: ${result.error}` : ''}`;
         }
         setTimeout(stop, 700);
       }).catch(() => {
         if (hint) {
           hint.style.display = 'block';
-          hint.textContent = 'Could not copy capture';
+          hint.textContent = t('copyFailed', 'Could not copy capture');
         }
         setTimeout(stop, 700);
       });
     }, 80);
-    if (hint) hint.textContent = 'Copying capture…';
+    if (hint) hint.textContent = t('copying', 'Copying capture…');
   };
 
   const onKey = (event) => { if (event.key === 'Escape') stop(); };

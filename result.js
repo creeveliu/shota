@@ -1,3 +1,7 @@
+const resultHint = document.querySelector('#result-hint');
+const localizedHint = chrome.i18n.getMessage('resultHint');
+if (localizedHint) resultHint.textContent = localizedHint;
+
 const query = new URLSearchParams(location.search);
 const source = new Image();
 source.onload = () => {

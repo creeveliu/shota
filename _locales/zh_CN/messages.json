@@ -1,0 +1,19 @@
+{
+  "extensionName": { "message": "Shota - 元素截图" },
+  "extensionDescription": { "message": "一键截取网页中任意可见元素。" },
+  "actionTitle": { "message": "Shota：选择元素截图" },
+  "popupEyebrow": { "message": "快速截图" },
+  "popupTitleLine1": { "message": "选中卡片。" },
+  "popupTitleLine2": { "message": "分享这一刻。" },
+  "popupSubtitle": { "message": "将鼠标移到页面上的任意可见元素，点击即可获得像素级截图。" },
+  "startSelecting": { "message": "开始选择" },
+  "proTip": { "message": "小提示" },
+  "cancelHint": { "message": "随时按 Esc 取消。" },
+  "version": { "message": "v0.1 MVP" },
+  "builtForWeb": { "message": "为网页而生" },
+  "pickerHint": { "message": "移动到元素 · 点击截图 · 按 Esc 退出" },
+  "copying": { "message": "正在复制截图…" },
+  "copied": { "message": "已复制到剪贴板" },
+  "copyFailed": { "message": "截图复制失败" },
+  "resultHint": { "message": "截图已准备好 · 右键保存或分享" }
+}

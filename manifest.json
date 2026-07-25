@@ -1,11 +1,12 @@
 {
   "manifest_version": 3,
-  "name": "Shota - Element Screenshot",
+  "default_locale": "en",
+  "name": "__MSG_extensionName__",
   "version": "0.1.0",
-  "description": "Capture any visible web element with one click.",
+  "description": "__MSG_extensionDescription__",
   "permissions": ["activeTab", "tabs", "scripting", "downloads", "offscreen", "clipboardWrite"],
   "action": {
-    "default_title": "Shota: select an element",
+    "default_title": "__MSG_actionTitle__",
     "default_popup": "popup.html"
   },
   "commands": {
