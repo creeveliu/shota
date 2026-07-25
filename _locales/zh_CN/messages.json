@@ -17,5 +17,6 @@
   "copying": { "message": "正在复制截图…" },
   "copied": { "message": "已复制到剪贴板" },
   "copyFailed": { "message": "截图复制失败" },
+  "watermarkText": { "message": "由 Shota 截取" },
   "resultHint": { "message": "截图已准备好 · 右键保存或分享" }
 }

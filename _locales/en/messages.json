@@ -17,5 +17,6 @@
   "copying": { "message": "Copying capture…" },
   "copied": { "message": "Copied to clipboard" },
   "copyFailed": { "message": "Could not copy capture" },
+  "watermarkText": { "message": "Captured with Shota" },
   "resultHint": { "message": "Your capture is ready · right-click to save or share" }
 }

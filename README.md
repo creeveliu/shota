@@ -16,3 +16,5 @@ The default shortcut is `Option+Shift+A` on macOS. Other platforms use `Ctrl+Shi
 The current MVP intentionally targets visible, above-the-fold elements. Full-page capture, cross-origin iframe selection, and polished export controls are next-step additions.
 
 The extension UI supports English and Simplified Chinese and follows the browser language.
+
+The free MVP adds a small Shota watermark to each copied capture.
