@@ -11,8 +11,8 @@
   "commands": {
     "start-picker": {
       "suggested_key": {
-        "default": "Ctrl+Alt+A",
-        "mac": "Ctrl+Alt+A"
+        "default": "Ctrl+Shift+A",
+        "mac": "MacCtrl+Option+A"
       },
       "description": "Start element capture"
     }
