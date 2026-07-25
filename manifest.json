@@ -1,0 +1,21 @@
+{
+  "manifest_version": 3,
+  "name": "Shota - Element Screenshot",
+  "version": "0.1.0",
+  "description": "Capture any visible web element with one click.",
+  "permissions": ["activeTab", "tabs", "scripting", "downloads", "offscreen", "clipboardWrite"],
+  "action": {
+    "default_title": "Shota: select an element",
+    "default_popup": "popup.html"
+  },
+  "background": {
+    "service_worker": "background.js"
+  },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content.js"],
+      "run_at": "document_idle"
+    }
+  ]
+}
