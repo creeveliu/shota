@@ -2,6 +2,7 @@
   "extensionName": { "message": "Shota - 元素截图" },
   "extensionDescription": { "message": "一键截取网页中任意可见元素。" },
   "actionTitle": { "message": "Shota：选择元素截图" },
+  "startPickerCommand": { "message": "开始选择元素截图" },
   "popupEyebrow": { "message": "快速截图" },
   "popupTitleLine1": { "message": "选中卡片。" },
   "popupTitleLine2": { "message": "分享这一刻。" },

@@ -15,7 +15,7 @@
         "default": "Ctrl+Shift+A",
         "mac": "Option+Shift+A"
       },
-      "description": "Start element capture"
+      "description": "__MSG_startPickerCommand__"
     }
   },
   "background": {

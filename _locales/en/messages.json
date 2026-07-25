@@ -2,6 +2,7 @@
   "extensionName": { "message": "Shota - Element Screenshot" },
   "extensionDescription": { "message": "Capture any visible web element with one click." },
   "actionTitle": { "message": "Shota: select an element" },
+  "startPickerCommand": { "message": "Start element capture" },
   "popupEyebrow": { "message": "QUICK CAPTURE" },
   "popupTitleLine1": { "message": "Pick a card." },
   "popupTitleLine2": { "message": "Share the moment." },
